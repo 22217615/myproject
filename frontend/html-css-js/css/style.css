@@ -1,0 +1,163 @@
+  
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+
+     background-color: #fafafa; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+     background-repeat: no-repeat;
+    color: #333 ;
+}
+
+/* Main restaurant title */
+h1 {
+
+     margin-top: 40px;
+    margin-bottom: 15px;
+    color: #c0392b;
+} 
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("../images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+}
+.status-open {
+    color: #27ae60; /* green */
+}
+
+.status-closed {
+    color: #c0392b; /* red */
+}
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    cursor: pointer ;
+   
+}
+ section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+button {
+    padding: 10px 16px;
+    margin: 6px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e67e22;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* Button hover effect */
+button:hover {
+    background-color: #d35400;
+}
+p {
+    margin-bottom: 20px;
+}
+ /* Menu list styling */
+
+ul {
+    
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+     background-color: #fff;
+      border-radius: 4px;
+       padding: 12px;
+       list-style: none;
+}
+.available {
+    color: #27ae60; /* green */
+}
+
+.low-stock {
+    color: #e67e22; /* orange */
+}
+
+.unavailable {
+    color: #c0392b;
+    opacity: 0.5;
+    cursor: not-allowed;
+    text-decoration: line-through;
+}
+#menuList li {
+    transition: background-color 0.2s;
+}
+
+#menuList li:hover {
+    background-color: #f5f5f5;
+}
+#menuList li.unavailable:hover {
+    background-color: transparent;
+}
+#order {
+    margin-top: 40px;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    line-height: 1.6;
+}
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.socials {
+    margin-top: 10px;
+}
+
+.socials a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.socials i {
+    margin-right: 6px;
+     font-size: 22px;
+}
+.socials a:hover {
+    color: #ff9800;
+}

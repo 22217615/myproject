@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>OMMY FOOD</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <header class="hero">
+    <h1>OMMY FOOD</h1>
+    <p>Commandez vos plats préférés rapidement et facilement</p>
+    <p>
+    Statut du restaurant :
+    <strong id="restaurantStatus">Ouvert</strong>
+</p>
+    <button id="menuBtn">Voir le menu</button>
+</header>
+ <div class="actions">
+<button id="orderBtn">Commander</button>
+<button id="specialBtn">Commande spéciale</button>
+<button id="budgetBtn">Budget vs Menu</button>
+</div>
+        <!-- Menu section -->
+         <section id="menu">
+    <h2>Menu</h2>
+    <!-- Menu list -->
+       
+    <ul id="menuList">
+         <li class="available">
+            Plat A – 5,00 $ <br>
+            <small>Disponibilité : 80 %</small>
+        </li>
+
+       <li class="low-stock">
+        
+            Plat B – 7,50 $ <br>
+            <small>Disponibilité : 25 %</small>
+        </li>
+
+         <li class="unavailable">
+            Plat C – 4,00 $ <br>
+             <small>Indisponible — stock épuisé</small>
+        </li>
+
+         <li class="available">
+            Plat D – 10,00 $ <br>
+            <small>Disponibilité : 100 %</small>
+        </li>
+    </ul> 
+</sedtion>
+
+    <!-- Order section -->
+     <section id="order">
+
+<h2>Votre commande</h2>
+
+<button id="clearOrderBtn">Vider la commande</button>
+
+<p id="orderMessage"></p>
+<p id="orderNumber"></p>
+
+<p id="emptyMessage">Votre commande est vide</p>
+
+<ul id="orderList"></ul>
+ 
+<p>
+    Sélectionnez vos plats et choisissez le mode de commande
+    (livraison ou retrait).
+</p>
+ <h3>Mode de commande</h3>
+
+<label>
+    <input type="radio" name="deliveryMode" value="pickup" checked>
+    Retrait (gratuit)
+</label>
+
+<br>
+
+<label>
+    <input type="radio" name="deliveryMode" value="delivery">
+    Livraison (+2 $)
+</label>
+
+<p id="totalPrice">Total : 0 $</p>
+<p id="prepTime">Temps estimé : 0 minutes</p>
+
+<button id="confirmBtn">Confirmer la commande</button>
+
+<p id="confirmMessage"></p>
+<button id="confirmOrderBtn">Commander</button>
+</section>
+<!-- Special order section -->
+ <section id="special-order" >
+<h2>Commande spéciale</h2>
+<p>
+    Planifiez une commande à l’avance avec une heure souhaitée.
+</p>
+<label for="scheduleTime">Choisissez une heure :</label>
+
+<input type="time" id="scheduleTime">
+
+<button id="scheduleBtn">Planifier la commande</button>
+
+<p id="scheduleMessage"></p>
+</section>
+<section id="budget">
+<!-- Budget section -->
+<h2>Budget vs Menu</h2>
+<p>
+    Entrez votre budget et découvrez les plats compatibles.
+</p>
+ <section id="budgetSection">
+    <h3>Votre budget</h3>
+
+    <input
+        type="number"id="budgetInput"placeholder="Entrez votre budget ($)"min="0">
+
+    <button id="checkBudgetBtn">Voir les plats disponibles</button>
+
+    <ul id="budgetResults"></ul>
+</section>
+
+    </section>
+
+    <footer class="footer">
+    <p>© 2026 OMMY FOOD — Tous droits réservés</p>
+    <p>Contact: contact@ommyfood.com</p>
+    <p>Kolwezi, République Démocratique Du Congo au cœur de l'Afrique</p>
+    <div class="socials">
+
+    <a href="#">
+        <i class="fab fa-instagram"></i>
+        Instagram
+    </a>
+
+    <a href="#">
+        <i class="fab fa-facebook"></i>
+        Facebook
+    </a>
+
+    <a href="#">
+        <i class="fab fa-x-twitter"></i>
+        Twitter
+    </a>
+
+</div>
+
+</footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
