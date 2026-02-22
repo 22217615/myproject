@@ -1,0 +1,164 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+.page-container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .subtitle {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.status-open { color: #2ecc71; font-weight: bold; }
+.status-closed { color: #e74c3c; font-weight: bold; }
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.options button {
+    background-color: #2980b9;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 200px;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.options button:hover { background-color: #3498db; transform: scale(1.05); }
+
+.badge {
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 3px 7px;
+    border-radius: 20px;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    animation: pop 0.3s ease;
+}
+
+@keyframes pop { 0% { transform: scale(0.5); } 100% { transform: scale(1); } }
+
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.menu-grid {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-grid li {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    width: 220px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.menu-grid li:hover { transform: scale(1.05); }
+
+.menu-grid span { font-weight: bold; display: block; }
+.menu-grid p { font-weight: bold; color: black; margin: 5px 0; }
+
+.badge-featured {
+    background: gold;
+    color: black;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 6px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#orderList {
+    list-style: none;
+    padding: 0;
+    max-width: 420px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#orderList li {
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.order-item-controls button {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.socials i { font-size: 22px; margin: 0 10px; }
+
+.add-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+    opacity: 0.95;
+}
+
+input[type="number"], input[type="time"] {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+button:disabled { opacity: 0.5; cursor: not-allowed; }

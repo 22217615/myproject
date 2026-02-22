@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title> LA CASA </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="page-container">
+
+<header class="hero">
+    <h1> LA CASA </h1>
+    <p class="subtitle">Bienvenue chez la casa, commandez vos plats préférés en simple clic.</p>
+    <p>
+        Statut du restaurant :
+        <strong id="restaurantStatus" class="status-open">Ouvert</strong>
+    </p>
+</header>
+
+<div class="options">
+    <button id="menuBtn">Voir le menu</button>
+    <button id="orderBtn">
+        Commander <span id="cartBadge" class="badge">0</span>
+    </button>
+    <button id="specialBtn">Commande spéciale</button>
+    <button id="budgetBtn">Budget vs Menu</button>
+</div>
+
+<section id="menu" style="display: none;">
+    <h2>MENU</h2>
+    <ul id="menuList"></ul>
+</section>
+
+<section id="order" style="display: none;">
+    <h2>Votre commande</h2>
+    <ul id="menuListOrder" class="menu-grid"></ul>
+    <ul id="orderList"></ul>
+
+    <h3>Mode de commande</h3>
+    <label>
+        <input type="radio" name="deliveryMode" value="pickup" checked>
+        Retrait (gratuit)
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="deliveryMode" value="delivery">
+        Livraison (+2 $)
+    </label>
+
+    <p id="totalPrice">Total : 0 $</p>
+    <p id="prepTime"></p>
+
+    <div class="order-actions">
+        <button id="clearOrderBtn">Vider la commande</button>
+        <button id="confirmBtn">Confirmer la commande</button>
+    </div>
+
+    <p id="confirmMessage"></p>
+    <p id="emptyMessage" style="display:none;">Votre commande est vide</p>
+</section>
+
+<section id="special-order" style="display: none;" class="centered-section">
+    <h2>Commande spéciale</h2>
+    <p>Planifiez une commande à l’avance avec une heure souhaitée.</p>
+    <input type="time" id="scheduleTime">
+    <button id="scheduleBtn">Planifier</button>
+    <p id="scheduleMessage"></p>
+</section>
+
+<section id="budget" style="display: none;" class="centered-section">
+    <h2>Budget vs Menu</h2>
+    <input type="number" id="budgetInput" placeholder="Budget ($)">
+    <button id="checkBudgetBtn">Vérifier</button>
+    <ul id="budgetResults"></ul>
+</section>
+
+</div> <!-- page-container -->
+
+<footer class="footer">
+    <p>© 2026 OMMY FOOD — Tous droits réservés | Contact: +243 83 77 98 090 | Ouvert 8h-22h</p>
+    <div class="socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
